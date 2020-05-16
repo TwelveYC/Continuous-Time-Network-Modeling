@@ -1,7 +1,7 @@
 
 
 def main():
-    print("pk")
+    print("ok")
 
 
 if __name__ == '__main__':

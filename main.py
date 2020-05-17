@@ -12,6 +12,7 @@ def main():
     G = nx.Graph()
     G.add_edges_from(data[:, 0:2])
     nx.set_edge_attributes(G, weight, "strength")
+    nx.write_gexf(G, "graph.gexf")
 
 
 if __name__ == '__main__':

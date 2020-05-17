@@ -15,9 +15,9 @@ decay_way = decay_ways[decay_order]
 is_para_add_one = False
 
 # 开始和结束时间
-time_window = [1085440961, 1086000000]
+time_window = [1085980961, 1086000000]
 
 # 选择参数
 
 # 当选择指数衰减，到这里配置参数
-alpha = 0.01
+alpha = 0.000001

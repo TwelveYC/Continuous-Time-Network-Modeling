@@ -10,5 +10,5 @@ def get_data():
             if not lines:
                 break
             lines_list = lines.split(" ")
-            data = np.append(data, [[int(lines_list[0]), int(lines_list[1]), int(lines_list[2])]],axis=0)
+            data = np.append(data, [[int(lines_list[0]), int(lines_list[1]), int(lines_list[2])]], axis=0)
     return data

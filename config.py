@@ -11,8 +11,7 @@ decay_order = 0
 decay_ways = ["exponent"]
 decay_way = decay_ways[decay_order]
 
-#  选择接触之后的影响力恢复方式，True为原数值 +1， False原数值重置为1
-is_para_add_one = False
+is_all_calculation = True
 
 # 开始和结束时间
 time_window = [1085980961, 1086000000]
@@ -20,4 +19,4 @@ time_window = [1085980961, 1086000000]
 # 选择参数
 
 # 当选择指数衰减，到这里配置参数
-alpha = 0.000001
+alpha = 0.00000000001

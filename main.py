@@ -10,14 +10,16 @@ import numpy as np
 def main():
     infos = get_data()
     if not is_all_calculation:
-        data, start, end = network_filter(infos)
-        weight = compute_decay(infos, data, start, end)
-        G = nx.Graph()
-        G.add_edges_from(data[:, 0:2])
-        nx.set_edge_attributes(G, weight, "strength")
+        # data, start, end = network_filter(infos)
+        # weight = compute_decay(infos, data, start, end)
+        # G = nx.Graph()
+        # G.add_edges_from(data[:, 0:2])
+        # nx.set_edge_attributes(G, weight, "strength")
+        pass
     else:
         #  数据有20296条
         #  一共59835条
+
         links_index = dict()
         links = np.empty((0, 3), dtype=int)
         links_num = 0

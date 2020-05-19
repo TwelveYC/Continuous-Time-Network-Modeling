@@ -13,5 +13,6 @@ def get_data():
                 break
             lines_list = lines.split(" ")
             data = np.append(data, [[int(lines_list[0]), int(lines_list[1]), int(lines_list[2])]], axis=0)
-    print(data.shape)
+            # if data.shape[0] > 10000:
+            #     break
     return data

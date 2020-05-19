@@ -55,6 +55,5 @@ class ContinuousTimeNetwork:
     def exponent_cutoff_decay(self, delta):
         self.link_strength = self.link_strength * np.where(delta < cutoff_time, 1,
                                                            np.exp(-self.alpha * (delta - cutoff_time)))
-
     def constant_decay(self, delta):
         self.link_strength = self.link_strength * np.power(const_decay_parameter, delta)

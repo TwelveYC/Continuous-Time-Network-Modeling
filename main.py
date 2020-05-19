@@ -11,7 +11,7 @@ def main():
     infos = get_data()
     network = ContinuousTimeNetwork(infos, decay_way=decay_way)
     plt_data = []
-    data_key = (663, 343)
+    data_key = (41, 63)
     for i,j in network.run():
         if data_key in j.keys():
             plt_data.append(i[j[data_key]])

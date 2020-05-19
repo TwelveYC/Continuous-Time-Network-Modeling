@@ -2,7 +2,7 @@
 # 1098 777142 2004年10月26日15时52分22秒0毫秒
 # 1082040961 2004年4月15日22时56分1秒0毫秒
 # 选择数据集
-data_order = 1
+data_order = 0
 DataSets = ["dataset/CollegeMsg.txt", "dataset/email-Eu-core-temporal.txt"]
 dataset_path = DataSets[data_order]
 
@@ -13,7 +13,6 @@ decay_way = decay_ways[decay_order]
 
 # 开始和结束时间
 
-# 选择参数
 
 # 当选择指数衰减，到这里配置参数
 alpha = 0.000000001

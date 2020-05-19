@@ -15,7 +15,7 @@ def main():
     for i,j in network.run():
         if data_key in j.keys():
             plt_data.append(i[j[data_key]])
-    plt.plot(plt_data)
+    plt.plot(plt_data[0:1000])
     plt.show()
 
 

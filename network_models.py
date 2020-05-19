@@ -44,6 +44,7 @@ class ContinuousTimeNetwork:
                 self.links_num += 1
                 self.links = np.append(self.links, [info], axis=0)
                 self.link_strength = np.append(self.link_strength, [1])
+            self.links[:, 2] = self.current_time_stamp
 
             # yield self.current_time_stamp
             # yield self.link_strength, self.current_time_stamp, self.links, self.links_index
@@ -55,5 +56,6 @@ class ContinuousTimeNetwork:
     def exponent_cutoff_decay(self, delta):
         self.link_strength = self.link_strength * np.where(delta < cutoff_time, 1,
                                                            np.exp(-self.alpha * (delta - cutoff_time)))
+
     def constant_decay(self, delta):
         self.link_strength = self.link_strength * np.power(const_decay_parameter, delta)

@@ -15,7 +15,7 @@ decay_way = decay_ways[decay_order]
 
 
 # 当选择指数衰减，到这里配置参数
-alpha = 0.000000001
+alpha = 0.000001
 
 # 当选择指数截至衰减方式，到这里配置参数
 cutoff_time = 600
